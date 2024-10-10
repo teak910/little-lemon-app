@@ -1,20 +1,20 @@
 
 import React from 'react'
-import Logo from "../Assets/img4.jpg"
+import Logo from "../Assets/logo.jpg"
+import styles from "../styles/Nav.css"
 function Nav() {
   return (
-  <>
-  <img src={Logo} />
-  
-  <nav>
-    <ul>
-      <li><a href="/home">Home page</a></li>
-      <li><a href="/about">About Us</a></li>
-      <li><a href="/blog">Blog</a></li>
-    </ul>
-  </nav>
-  </>
- 
+    <div className="container">
+     <nav>
+      <img src={Logo} alt="little-lemon-logo"className="photo-logo" />
+      <ul className="menu">
+        <li><a href="#">Home page</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+     </nav>
+    <hr></hr>
+   </div>
   )
 }
 
