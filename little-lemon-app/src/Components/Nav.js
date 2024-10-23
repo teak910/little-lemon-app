@@ -1,18 +1,20 @@
 import React from 'react';
 import Logo from '../Assets/logo1.jpg';
+import '../Syles/Nav.css';
+import '../Syles/App.css'
 
 const Nav = () => {
     return (
-      <nav>
+      <nav className='nav-bar'>
         <a href="/" className='logo'>
         <img src={Logo} alt='logo-photo' />
       </a>
-        <div>
+        <div className='humburger-icon'>
           <div className='bar'></div>
           <div className='bar'></div>
           <div className='bar'></div>
         </div>
-      <ul>
+      <ul className='nav-links'>
         <li>
           <a href='/'>Home</a>
         </li>
